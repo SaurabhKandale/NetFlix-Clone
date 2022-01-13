@@ -3,9 +3,7 @@ import start from '../../axios';
 import requests from '../../reqsender';
 import './banner.css';
 function Banner() {
-
     const [picture,setPicture]=useState([]);
-
     useEffect(()=>{
         async function call(){
             const arr=await start.get(requests.fetchTrending);
@@ -16,11 +14,6 @@ function Banner() {
         }
         call();
     },[]);
-    
-    console.log(picture);
-    
-
-
     return (
         <div className='banner' style={{
             backgroundImage:`url("https://image.tmdb.org/t/p/original${picture.backdrop_path}")`,

@@ -1,7 +1,7 @@
 .banner{
     width: 100%;
     height: 100vh;
-    box-shadow: 0 10px 15px 10px rgb(2, 2, 2), 0 15px 20px 10px rgba(2, 2, 2, 0.8);
+    box-shadow: 0 10px 15px 10px rgb(10, 10, 10), 0 15px 20px 10px rgba(17, 17, 17,0.5);
 }
 .banner_content{
     padding-top: 40vh;
@@ -20,31 +20,37 @@
     font-size: 20px;
     max-height: 200px;
     overflow-y: scroll;
+    word-spacing: 2px;
 }
 .ban_description::-webkit-scrollbar, .banner_content::-webkit-scrollbar{
     display: none;
 }
-.banner::after{
-    content: "";
-    position: absolute;
-    top: 100%;
-    display: block;
-    width: 100%;
-    background-image: linear-gradient(rgb(0, 0, 0),rgba(1, 1, 1),rgba(1.9, 1.9, 1.9));
-    height: 10px;
-    box-shadow: 0 -5px 10px 5px rgb(2, 2, 2), 0 -10px 30px 0 rgba(2, 2, 2, 0.568);
-}
-
 .ban_button button{
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.445);
     border: 2px solid black;
     border-radius: 4px;
-    padding: 4px 10px;
+    padding: 4px 15px;
     transition: 0.2s;
+    color: white;
+}
+.ban_button button i{
+    margin-right: 8px;
 }
 .ban_button button:hover{
-    background-color: rgba(0, 0, 0, 0.548);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .btn2{
     margin-left: 15px;
+}
+
+@media (max-width:600px) {
+    .banner_content{
+        padding-top: 30vh;
+        margin-left: 15px;
+        max-width: 100%;
+    }
+    .ban_title, .ban_description{
+        font-size: initial;
+    }
 }

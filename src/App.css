@@ -1,8 +1,29 @@
 *{
   margin: 0px;
+}
+.App{
   color: white;
 }
 body{
   background-color: #111;
 }
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+.footer span{
+  margin-right: 15px;
+}
+.footer_img{
+  width: 300px;
+  height: 20px;
+}
+@media (max-width: 500px) {
+  .footer_img{
+    width: 50%;
+  }
+}
+
 

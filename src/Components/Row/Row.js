@@ -28,6 +28,7 @@ function Row({ title, fetchURL, isLarge }) {
             </div>
         </div>
     )
-}
+
+    }
 
 export default Row;
