@@ -15,10 +15,14 @@
 }
 .fa-user{
     font-size: 25px;
-    margin-left: 10px;
-    transition: 0.4s;
+    margin: 0 10px;
+     transition: 0.4s;
 }
 .fa-user:hover{
     color: rgb(226, 43, 52);
     cursor: pointer;
+}
+.user{
+    margin-right: 10px;
+    font-size: 18px;
 }
