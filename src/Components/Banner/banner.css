@@ -46,11 +46,7 @@
 
 @media (max-width:600px) {
     .banner_content{
-        padding-top: 30vh;
         margin-left: 15px;
         max-width: 100%;
-    }
-    .ban_title, .ban_description{
-        font-size: initial;
     }
 }
