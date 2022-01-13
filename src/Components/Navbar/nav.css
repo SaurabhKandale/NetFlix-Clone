@@ -1,0 +1,24 @@
+.navbar{
+    z-index: 3;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 10px 20px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.815);
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+}
+.fa-user{
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+.fa-user:hover{
+    color: rgb(226, 43, 52);
+    cursor: pointer;
+}

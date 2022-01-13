@@ -1,0 +1,50 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 10px 15px 10px rgb(2, 2, 2), 0 15px 20px 10px rgba(2, 2, 2, 0.8);
+}
+.banner_content{
+    padding-top: 40vh;
+    max-width: 600px;
+    max-height: 50vh;
+    margin-left: 30px;
+    overflow: auto;  
+}
+.ban_title{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.ban_description{
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.ban_description::-webkit-scrollbar, .banner_content::-webkit-scrollbar{
+    display: none;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0),rgba(1, 1, 1),rgba(1.9, 1.9, 1.9));
+    height: 10px;
+    box-shadow: 0 -5px 10px 5px rgb(2, 2, 2), 0 -10px 30px 0 rgba(2, 2, 2, 0.568);
+}
+
+.ban_button button{
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 4px 10px;
+    transition: 0.2s;
+}
+.ban_button button:hover{
+    background-color: rgba(0, 0, 0, 0.548);
+}
+.btn2{
+    margin-left: 15px;
+}
