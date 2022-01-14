@@ -18,7 +18,7 @@ function App() {
       <Row title="Horror Movies" fetchURL={requests.fetchHorrorMovies} /> 
       <div className="footer">
         <div>
-          <a href={"https://github.com/SaurabhKandale/NetFlix-Clone"} target={"_blank"} className="my_git" ><i className="fab fa-github" title="SaurabhKandale"></i></a>
+          <a href={"https://github.com/SaurabhKandale/NetFlix-Clone"} target={"_blank"} className="my_git" rel="noreferrer" ><i className="fab fa-github" title="SaurabhKandale"></i></a>
         </div>
         <div>
         <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_2-9665a76b1ae401a510ec1e0ca40ddcb3b0cfe45f1d51b77a308fea0845885648.svg" alt="" className="footer_img" title="powered By" />
