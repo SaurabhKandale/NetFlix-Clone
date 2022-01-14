@@ -8,10 +8,11 @@ body{
   background-color: #111;
 }
 .footer{
+  padding: 10px 15px 5px 15px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 10.3vh;
+  height: 10.5vh;
 }
 .footer span{
   margin-right: 15px;
@@ -20,9 +21,22 @@ body{
   width: 300px;
   height: 20px;
 }
+.footer div{
+  padding: 10px 1vw;
+}
+.fa-github{
+  font-size: 40px;
+}
+.my_git{
+  color: white;
+  transition: color 0.4s;
+}
+.my_git:hover{
+  color: rgb(92, 92, 92);
+}
 @media (max-width: 500px) {
   .footer_img{
-    width: 50%;
+    width: 200px;
   }
 }
 

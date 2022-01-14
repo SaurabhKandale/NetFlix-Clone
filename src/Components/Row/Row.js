@@ -21,9 +21,6 @@ function Row({ title, fetchURL, isLarge }) {
         setObject(item);
         setTrue(true);
     }
-
-    console.log(content);
-
     return (
         <div>
             <h1 className='row_title'>{title}</h1>

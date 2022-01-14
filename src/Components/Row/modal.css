@@ -27,6 +27,8 @@
     height: 80vh;
     border-radius: 10px;
     border-right: 3px solid red;
+    animation-name: anime;
+    animation-duration: 1.5s;
 }
 .modal_text{
     width: 62%;
@@ -50,6 +52,8 @@
 .modal_text h2{
     font-size: 28px;
     color: blanchedalmond;
+    padding: 0px 15px;
+    text-align: center;
 }
 .modal_text p{
     font-size: 18px;
@@ -88,5 +92,11 @@
     }
     .modal_content::-webkit-scrollbar{
         display: none;
+    }
+    .modal_text p{
+        font-size: 16px;
+    }
+    .modal_text h2{
+        font-size: 22px;
     }
 }

@@ -50,4 +50,10 @@
         max-width: 100%;
         padding-right: 5px;
     }
+    .ban_title{
+        font-size: 28px;
+    }
+    .ban_description{
+        font-size: 18px;
+    }
 }

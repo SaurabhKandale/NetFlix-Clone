@@ -3,9 +3,6 @@ import './modal.css'
 
 class Modal extends Component {
     render() {
-        {
-            console.log(this.props.pop.title)
-        }
         return (
             <div className="modal">
                 <div className="modal_content">
