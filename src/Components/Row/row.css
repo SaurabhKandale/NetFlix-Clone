@@ -19,18 +19,32 @@
     height: 150px;
     border: 2px solid rgb(211, 0, 0);
     border-radius: 8px;
-    transition: 0.2s all;
-    margin: 0px 8px;
     box-shadow: 0 8px 15px 0 rgb(14, 0, 0), 0 10px 20px 0 rgb(14, 0, 0,0.5);
 }
-.poster:hover{
+.poster_div{
+    position: relative;
+    margin: 0px 8px;
+    transition: 0.2s all;
+}
+.poster_div:hover{
     transform: scale(1.1);
 }
-
+.fa-info-circle{
+    position: absolute;
+    bottom: 16px ;
+    right: 16px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.fa-info-circle:hover{
+    cursor: pointer;
+    color: red;
+}
 .large_row{
     height: 350px;
 }
 .large_row .poster{
+    width: auto;
     height: 280px;
 }
 

@@ -10,6 +10,7 @@
     align-items: center;
     animation-name: anime;
     animation-duration: 0.4s;
+    z-index: 1300;
 }
 .modal_content{
     position: relative;

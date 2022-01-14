@@ -27,7 +27,10 @@ function Row({ title, fetchURL, isLarge }) {
             <div className={`row ${isLarge && "large_row"}`}>
                 {
                     content.map(item => {
-                        return <img key={item.id} src={`${img_url}${isLarge?item.poster_path:item.backdrop_path}`} alt='' className='poster' onClick={()=>{handleClick(item)}} />
+                        return <div key={item.id} className="poster_div" >
+                            <img  src={`${img_url}${isLarge?item.poster_path:item.backdrop_path}`} alt='' className='poster' />
+                            <i className="fa fa-info-circle" onClick={()=>{handleClick(item)}} ></i>
+                        </div>
                     })
                 }
             </div>
