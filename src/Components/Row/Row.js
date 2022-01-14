@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import start from '../../axios'
+import Modal from './Modal';
 import './row.css'
 function Row({ title, fetchURL, isLarge }) {
 
     const [content, setContent] = useState([]);
+    const [isTrue,setTrue]=useState(false);
+    const [object,setObject]=useState({});
     const img_url = "https://image.tmdb.org/t/p/original";
     useEffect(() => {
         async function makeCall() {
@@ -14,6 +17,11 @@ function Row({ title, fetchURL, isLarge }) {
         makeCall();
     }, [fetchURL])
 
+    const handleClick=(item)=>{
+        setObject(item);
+        setTrue(true);
+    }
+
     console.log(content);
 
     return (
@@ -22,10 +30,11 @@ function Row({ title, fetchURL, isLarge }) {
             <div className={`row ${isLarge && "large_row"}`}>
                 {
                     content.map(item => {
-                        return <img key={item.id} src={`${img_url}${isLarge?item.poster_path:item.backdrop_path}`} alt='' className='poster' />
+                        return <img key={item.id} src={`${img_url}${isLarge?item.poster_path:item.backdrop_path}`} alt='' className='poster' onClick={()=>{handleClick(item)}} />
                     })
                 }
             </div>
+            {isTrue && <Modal pop={object} set={setTrue} />}
         </div>
     )
 

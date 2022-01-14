@@ -24,7 +24,6 @@
     box-shadow: 0 8px 15px 0 rgb(14, 0, 0), 0 10px 20px 0 rgb(14, 0, 0,0.5);
 }
 .poster:hover{
-    z-index: 2;
     transform: scale(1.1);
 }
 
@@ -33,4 +32,12 @@
 }
 .large_row .poster{
     height: 280px;
+}
+
+@media (max-width:500px) {
+    .row_title{
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
 }
